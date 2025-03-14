@@ -1,0 +1,118 @@
+/* Hero Section */
+.hero-section {
+    background-image: url('/path-to-your-image.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  .cta-button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 1.25rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #28a745;
+  }
+  
+  /* Service Cards */
+  .service-card {
+    border: 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-card h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  /* Booking Form */
+  .booking-section .form-control {
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .booking-section .form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+  }
+  
+  .booking-section button {
+    border-radius: 50px;
+    padding: 12px 20px;
+  }
+  
+  /* Reviews Section */
+  .reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .review-slider {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .review-card {
+    background: #333;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+    width: 60%;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+  }
+  
+  .review-footer {
+    font-size: 1rem;
+    color: #ddd;
+    margin-top: 15px;
+    text-align: right;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #212529;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+  }
+  

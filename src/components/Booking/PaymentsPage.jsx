@@ -72,30 +72,7 @@ const PaymentsPage = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {/* {bookings.length > 0 ? (
-                            bookings.map((booking) => (
-                                <tr key={booking.id}>
-                                    
-                                    <td>{booking.id}</td>
-                                    <td>{booking.carId}</td>
-                                    <td className="fw-bold text-success">RS. {booking.totalAmount}</td>
-                                    <td>{booking.status}</td>
-                                    <td>
-                                        <button className="btn btn-sm btn-success"
-                                            onClick={() => handleOpenModal(booking)}
-                                        >
-                                            💰 Pay Now
-                                        </button>
-                                    </td>
-                                </tr>
-                            ))
-                        ) : (
-                            <tr>
-                                <td colSpan="4" className="text-center text-muted">
-                                    🚀 No pending payments. Enjoy your ride!
-                                </td>
-                            </tr>
-                        )} */}
+                        
                          {bookings.filter(booking => booking.status === "confirmed").length > 0 ? (
                             bookings.filter(booking => booking.status === "confirmed").map((booking) => (
                                 <tr key={booking.id}>
